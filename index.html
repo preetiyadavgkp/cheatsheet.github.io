@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <title>html</title>
+</head>
+<body>
+    <nav id="navigation">
+        <span class="logo"><img src="copy.jpg"></span>
+        <div class="content center">
+            <h1>This HTML Cheatsheet Is For You</h1>
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li> Html Code for Analog clock </li>
+            <Pre class= "language-HTML"><code>
+                
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;analog clock&lt;/title&gt;
+    &lt;link rel="stylesheet" href="clock.css"&gt;
+    &lt;script src="clock.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    
+    &lt;div id="clockContainer"&gt;
+        &lt;div id="hour"&gt;&lt;/div&gt;
+        &lt;div id="minute"&gt;&lt;/div&gt;
+        &lt;div id="second"&gt;&lt;/div&gt;
+        
+
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+            </code></Pre>
+            <li>Analog Clock Js code
+            <pre class="language-js"><code>
+                setInterval(()=>{
+                    d=new Date();
+                    htime=d.getHours();
+                    mtime=d.getMinutes();
+                    stime=d.getSeconds();
+                    hrotation=30*htime+mtime/2;
+                    mrotation=6*mtime;
+                    srotation=6*stime;
+                
+                    hour.style.transform=`rotate(${hrotation}deg)`;
+                    minute.style.transform=`rotate(${mrotation}deg)`;
+                    second.style.transform=`rotate(${srotation}deg)`;
+                
+                },1000) 
+            </code></pre> 
+
+            </li>
+            <li>CSS for Analog Clock 
+                <pre class="language-css"><code>
+                    *{
+                        margin: 0;
+                        padding: o;
+                    }
+                    #navigation{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: rgb(20, 20, 20);
+                        color: aliceblue;
+                    }
+                    
+                    .logo img{
+                        width: 70px;
+                    }
+                    .container{
+                        /* background-credolor: ; */
+                        width: 60vw;
+                        margin: auto;
+                        padding:  32px;
+                    }
+                    .logo{
+                        padding: 0 23px;
+                    }
+                    .toolbar-item button{
+                        cursor:pointer;
+                    }
+
+                </code></pre>
+            </li>
+            
+        </ol>
+    </div>
+    
+</body>
+</html>

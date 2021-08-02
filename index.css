@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: o;
+}
+#navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+}
+
+.logo img{
+    width: 70px;
+}
+.container{
+    /* background-credolor: ; */
+    width: 60vw;
+    margin: auto;
+    padding:  32px;
+}
+.logo{
+    padding: 0 23px;
+}
+.toolbar-item button{
+    cursor:pointer;
+}
